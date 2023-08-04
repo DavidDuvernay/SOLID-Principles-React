@@ -3,13 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import TodoList from './SingleResponsabilityPrinciple';
+import { TitleWithButton } from './OpenClosedPrinciple';
+import { Button, RedButton } from './LiskovSustitutionPrinciple';
+import Todo from './DependencyInversionPrinciple';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <TodoList /> */}
+    {/* <TitleWithButton title="Hello World!" buttonText="Button Text" onClick={() => {}}/> */}
+    {/* <Button  title="Hello Button" color="green" size="xl"/>
+    <RedButton title="Hello RedButton" size="m"/> */}
+    <Todo />
   </React.StrictMode>
 );
 
